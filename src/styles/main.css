@@ -49,7 +49,7 @@ h2 {
 }
 
 .game {
-    border: 1px solid red;  /*retirar aqui para alinhar */
+    /*border: 1px solid red;*/  /*retirar aqui para alinhar */
     width: 430px;
     height: 430px;
     display: flex;
@@ -69,7 +69,7 @@ h2 {
     background-color: #fff;
 
     font-size: 3em;
-    transform: rotate(180deg);
+    transform: rotateY(180deg);
     transition: 0.25s;
 }
 
@@ -88,6 +88,6 @@ h2 {
 transform: rotateY(0deg);
 }
 
-.boxOpen::after {
+.boxOpen::after, .boxMatch::after {
     transform: rotateY(180deg);
     }

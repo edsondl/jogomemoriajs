@@ -28,13 +28,15 @@ for(let i = 0; i < emojis.length; i++) {
 
 function handleClick() {
     if(openCards.length < 2) {
-        this.classList.add("boxopen");
+        this.classList.add("boxOpen");
         openCards.push(this);
     }
 
     if(openCards.length == 2) {
         setTimeout(checkMatch, 500);
     }
+
+    console.log(openCards);
 }
 
 function checkMatch() {
